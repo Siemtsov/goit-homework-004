@@ -225,6 +225,11 @@ img {
   width: calc((100% - 72px) / 4);
 }
 .option-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+
   padding: 24px 100px;
   background-color: var(--primary-cloud-color);
   border-radius: 4px;
