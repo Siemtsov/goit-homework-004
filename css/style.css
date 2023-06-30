@@ -340,7 +340,7 @@ img {
 .team-icon:focus {
   background-color: var(--ocean-active);
 }
-.team-icon-svg {
+.social-media-icon {
   fill: #f4f4fd;
 }
 /* OUR CUSTOMERS */
@@ -436,21 +436,24 @@ img {
   gap: 16px;
 }
 .social-media-element {
-  padding: 12px;
-  background-color: var(--iris-color);
-  border-radius: 50%;
-
-  cursor: pointer;
-
-  transition: background-color var(--primary-transition);
-}
-.social-media-element:hover {
-  background-color: var(--success-color);
+  width: 40px;
+  height: 40px;
 }
 .social-media {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 12px;
+  background-color: var(--iris-color);
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition: background-color var(--primary-transition);
+}
+.social-media:hover {
+  background-color: var(--success-color);
 }
 /* MODAL WINDOW */
 .backdrop {
