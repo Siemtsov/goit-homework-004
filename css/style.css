@@ -109,7 +109,7 @@ img {
   display: flex;
   gap: 40px;
 }
-.active{
+.active {
   position: relative;
 }
 .active::after {
@@ -159,7 +159,6 @@ img {
 }
 /* HERO SECTION */
 .hero-section {
-  background-color: var(--primary-navy-blue);
   background-image: linear-gradient(
       to top,
       rgba(46, 47, 66, 0.7),
