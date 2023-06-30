@@ -326,20 +326,21 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   transition: background-color var(--primary-transition);
-  
+
   width: 100%;
   height: 100%;
-  
+
   background-color: var(--iris-color);
   border-radius: 50%;
   padding: 12px;
 }
-.team-icon:hover {
+.team-icon:hover,
+.team-icon:focus {
   background-color: var(--ocean-active);
 }
-.team-icon-svg{
+.team-icon-svg {
   fill: #f4f4fd;
 }
 /* OUR CUSTOMERS */
