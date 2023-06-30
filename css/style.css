@@ -101,7 +101,6 @@ img {
   justify-content: space-between;
 }
 .header-nav {
-  position: relative;
   display: flex;
   align-items: center;
   gap: 40px;
@@ -109,6 +108,9 @@ img {
 .nav-list {
   display: flex;
   gap: 40px;
+}
+.active{
+  position: relative;
 }
 .active::after {
   content: "";
