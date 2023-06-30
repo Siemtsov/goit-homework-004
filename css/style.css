@@ -452,7 +452,8 @@ img {
 
   transition: background-color var(--primary-transition);
 }
-.social-media:hover {
+.social-media:hover,
+.social-media:focus {
   background-color: var(--success-color);
 }
 /* MODAL WINDOW */
@@ -465,6 +466,8 @@ img {
   height: 100%;
 
   background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity var(--primary-transition),
+    visibility var(--primary-transition);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -473,9 +476,12 @@ img {
 }
 .modal-window {
   width: 408px;
-  height: 584px;
+  min-height: 584px;
   border-radius: 4px;
   background-color: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform var(--primary-transition);
 
   position: absolute;
   top: 50%;
@@ -484,7 +490,9 @@ img {
   transform: translateX(-50%) translateY(-50%);
 }
 .modal-btn {
-  padding: 8px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--cornflower-color);
@@ -498,17 +506,21 @@ img {
   top: 24px;
   right: 24px;
 
-  transition: background-color var(--primary-transition);
+  transition: background-color var(--primary-transition),
+    border var(--primary-transition);
 }
-.modal-btn:hover {
+.modal-btn:hover,
+.modal-btn:focus {
   background-color: var(--ocean-active);
+  border: none;
 }
 .modal-icon {
   fill: var(--primary-navy-blue);
 
   transition: fill var(--primary-transition);
 }
-.modal-btn:hover .modal-icon {
+.modal-btn:hover .modal-icon,
+.modal-btn:focus .modal-icon {
   fill: var(--primary-white-color);
 }
 /* PORTFOLIO */
