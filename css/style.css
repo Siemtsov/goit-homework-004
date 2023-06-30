@@ -160,7 +160,6 @@ img {
 /* HERO SECTION */
 .hero-section {
   background-image: linear-gradient(
-      to top,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
