@@ -382,7 +382,8 @@ img {
   justify-content: center;
   align-items: center;
 
-  transition: border var(--primary-transition);
+  transition: border-color var(--primary-transition),
+    color var(--primary-transition);
 }
 .customers-link:hover,
 .customers-link:focus {
@@ -405,11 +406,11 @@ img {
   padding: 100px 0;
 }
 .footer-container {
-}
-.footer-list {
   display: flex;
-  gap: 120px;
   align-items: baseline;
+}
+.footer-container-caption {
+  margin-right: 120px;
 }
 .footer-logo {
   display: inline-block;
@@ -419,12 +420,14 @@ img {
   width: 264px;
   color: var(--primary-cloud-color);
 }
-.social-media-header {
+.social-media-container {
+}
+.social-media-title {
   font-size: 16px;
   color: var(--primary-white-color);
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
 .social-media-list {
